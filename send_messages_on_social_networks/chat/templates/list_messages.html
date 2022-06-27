@@ -1,10 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1> Messages </h1>
     {% if messages %}
         {% for message in messages %}
-            <li> Date de publication : {{ message.publication_date }}</li>
-            <li> Contenu : {{ message.content }}</li>
+            <article class="media content-section">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <a class="mr-2" href="#"> Auteur </a>
+                        <small class="text-muted"> " {{ message.publication_date }} (depuis Postgres)" </small>
+                    </div>
+                    <h5 class="article-title"> Contenu du message : "{{ message.content }} (depuis Postgres)" </h5>
+                    <p class="article-content"> Réseau Social :  </p>
+                    <p class="article-content"> statut :  </p>
+                </div>
+            </article>
+
         {% endfor %}
     {% else %}
         <p> Pas de messages à Afficher </p>
