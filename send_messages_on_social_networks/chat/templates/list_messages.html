@@ -3,7 +3,8 @@
     <h1> Messages </h1>
     {% if messages %}
         {% for message in messages %}
-            <li>{{ message.content }}</li>
+            <li> Date de publication : {{ message.publication_date }}</li>
+            <li> Contenu : {{ message.content }}</li>
         {% endfor %}
     {% else %}
         <p> Pas de messages à Afficher </p>

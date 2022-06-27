@@ -3,7 +3,8 @@ env/
 chat/__pycache__/
 chat/migrations/__pycache__/
 send_messages_on_social_networks/.env
-
+send_messages_on_social_networks/__pycache__/settings.cpython-39.pyc
+send_messages_on_social_networks/__pycache__/urls.cpython-39.pyc
 
 # Mac
 .DS_Store
