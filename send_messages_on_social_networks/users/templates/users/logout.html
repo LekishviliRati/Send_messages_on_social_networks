@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3> Vous êtes déconnecté </h3>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Vous souhaitez vous reconnecter ? <a href="{% url 'login' %}"> Connexion </a> <br>
+            Revenir vers la page d'<a href="{% url 'home_page' %}">Accueil </a>
+        </small>
+    </div>
+{% endblock %}

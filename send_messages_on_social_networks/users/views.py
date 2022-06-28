@@ -12,7 +12,7 @@ def register(request):
         form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect("home_page")
+            return redirect("login")
     else:
         return redirect("register")
 
