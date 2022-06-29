@@ -45,9 +45,12 @@ import requests
 
 
 def send_message(input):
-    """"""
+    """
+    This function is set to send a message to my discord channel : "koesio server test"
+    Authorization key might change, need to be carteful.
+    """
     header = {
-        'Authorization': 'OTkxNjE1NjI1OTEyOTA5ODQ0.GiGOV_.IE_lplPZTCYYxznZ-GghZLEYPfyB-s31MDxd3o'
+        'Authorization': 'OTkxNjE1NjI1OTEyOTA5ODQ0.GpFQuQ.7e9Eu9H98D6_Ukv0TibbCeqFmp7_Ue11LOyBoI'
     }
 
     example = {
@@ -58,5 +61,5 @@ def send_message(input):
     return response
 
 
-message = "test depuis ANNECY"
+message = "FONCTION SEND_MESSAGE"
 send_message(message)
