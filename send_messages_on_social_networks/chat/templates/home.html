@@ -1,4 +1,33 @@
 {% extends 'base.html' %}
 {% block content %}
-Page d'accueil
+    <article class="media content-section" style="text-align: center; background-color: floralwhite ; padding-bottom: 40px;
+    border: 2px solid #6B5B95; border-radius: 60px">
+        <div class="media-body">
+            <div class="article-metadata">
+                <h1 class="article-title" style="color: #6B5B95">
+                    Envoyez des messages sur différents réseaux sociaux !
+                </h1><br>
+            </div>
+            <br>
+            <p class="article-content">
+                <h3 style="color: goldenrod"> Suivez les étapes ci-dessous : </h3><br>
+            </p>
+            <p class="article-content">
+                <h5> 1) Créez un compte : <a href="{% url 'register' %}"> Inscription </a></h5><br>
+                <h5> 2) Déjà inscrit ? Dans ce cas identifiez-vous : <a href="{% url 'login' %}"> Connexion </a></h5><br>
+                <h5> 3) Cliquez sur "Mes messages" pour consulter vos anciens messages et en envoyer de nouveaux ! </h5><br>
+            </p>
+            <div style="text-align: unset ">
+                <h4 style="color: brown ; padding-bottom: 10px; padding-top: 10px">
+                    Rati Lekishvili (Développeur Python)
+                </h4>
+                  <a href="https://github.com/LekishviliRati" title="Suis-moi sur GITHUB !" target="_blank">
+                      GITHUB
+                  </a> <br>
+                  <a href="https://www.linkedin.com/in/rati-lekishvili/" title="Mon Linked In" target="_blank">
+                      LINKED IN
+                  </a>
+            </div>
+        </div>
+    </article>
 {% endblock %}
