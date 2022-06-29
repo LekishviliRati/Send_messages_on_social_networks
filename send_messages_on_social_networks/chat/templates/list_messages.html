@@ -1,22 +1,33 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 {% block content %}
-    {% if messages %}
-        {% for message in messages %}
-            <article class="media content-section">
-                <div class="media-body">
-                    <div class="article-metadata">
-                        <a class="mr-2" href="#"> {{ message.author }} </a>
-                        <small class="text-muted"> " {{ message.publication_date }} (depuis Postgres)" </small>
-                    </div>
-                    <h5 class="article-title"> Contenu du message : "{{ message.content }} (depuis Postgres)" </h5>
-                    <p class="article-content"> Réseau Social :  </p>
-                    <p class="article-content"> statut :  </p>
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4"> Publier un nouveau message </legend>
+            {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit"> Publier </button>
+        </div>
+    </form> <br>
+{% if messages %}
+    {% for message in messages %}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href="#"> {{ message.author }} </a>
+                    <small class="text-muted"> " {{ message.publication_date }} (depuis Postgres)" </small>
                 </div>
-            </article>
-
-        {% endfor %}
-    {% else %}
-        <p> Pas de messages à Afficher </p>
-    {% endif %}
+                <h5 class="article-title"> Contenu du message : "{{ message.content }} (depuis Postgres)" </h5>
+                <p class="article-content"> Réseau Social :  </p>
+                <p class="article-content"> statut :  </p>
+            </div>
+        </article>
+    {% endfor %}
+{% else %}
+    <p> Pas de messages à Afficher </p>
+{% endif %}
 
 {% endblock %}
