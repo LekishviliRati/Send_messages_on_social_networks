@@ -1,1 +1,0 @@
-web:gunicorn send_messages_on_social_networks.wsgi
