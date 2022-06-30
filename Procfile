@@ -1,1 +1,2 @@
 web:gunicorn send_messages_on_social_networks.send_messages_on_social_networks.wsgi
+heroku ps:scale web=1
