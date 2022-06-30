@@ -21,6 +21,7 @@ def list_message(request):
             content = form.cleaned_data['content']
             send_content_to_discord = SendMessageToDiscord(content)
             form.save()
+            form = MessageRegisterForm()
             return render(request, 'list_messages.html', {'messages': message, 'form': form})
             # return redirect("list_message")
 

@@ -142,6 +142,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Added custom user table
 AUTH_USER_MODEL = 'users.User'
+# AUTH_USER_MODEL = 'users_management.UserManage'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
