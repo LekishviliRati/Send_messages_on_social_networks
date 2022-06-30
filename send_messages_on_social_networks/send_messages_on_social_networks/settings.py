@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'send_messages_on_social_networks.send_messages_on_social_networks.wsgi.application'
+WSGI_APPLICATION = 'send_messages_on_social_networks.wsgi.application'
 
 
 # Database
