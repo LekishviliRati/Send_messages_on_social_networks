@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn send_messages_on_social_networks.send_messages_on_social_networks..wsgi
+web: gunicorn send_messages_on_social_networks.send_messages_on_social_networks.wsgi
