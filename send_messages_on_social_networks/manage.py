@@ -6,7 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'send_messages_on_social_networks.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'send_messages_on_social_networks.'
+                                                    'send_messages_on_social_networks.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
