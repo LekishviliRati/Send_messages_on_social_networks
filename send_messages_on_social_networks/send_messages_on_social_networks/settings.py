@@ -33,9 +33,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = APP_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['social-networks-messages.herokuapp.com']
+ALLOWED_HOSTS = ['koesio-project.herokuapp.com']
 
 
 # Application definition
