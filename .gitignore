@@ -1,5 +1,6 @@
 .idea/
 env/
+.env
 chat/__pycache__/
 chat/migrations/__pycache__/
 send_messages_on_social_networks/.env
